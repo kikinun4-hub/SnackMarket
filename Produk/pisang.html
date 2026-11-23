@@ -1,0 +1,269 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keripik Pisang - SnackMarket</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+
+            <div class="logo">
+                <span>Snack</span>Market
+            </div>
+
+            <nav>
+                <a href="../index.html">Beranda</a>
+                <a href="../index.html#kategori">Kategori</a>
+                <a href="../pisang.html" class="active">Keripik Pisang</a>
+                <a href="../index.html#tentang">Tentang Kami</a>
+            </nav>
+
+            <div class="header-right">
+
+               <a href="keranjang.html" class="btn-login">
+                Keranjang (<span id="jumlahKeranjang">0</span>)
+            </a>
+            <a href="login.html" class="btn-login">Masuk</a>
+            <a href="daftar.html" class="btn-register">Daftar</a> 
+            
+            <a href="../Produk/riwayat.html" class="btn-riwayat">
+                     Riwayat Pesanan</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- JUDUL HALAMAN -->
+    <section class="produk container">
+
+        <div class="section-heading">
+            <div>
+                <span class="small-title">PILIHAN CAMILAN</span>
+                <h2>Keripik Pisang</h2>
+                <p>Nikmati berbagai pilihan rasa keripik pisang.</p>
+            </div>
+        </div>
+
+
+        <!-- PENCARIAN PRODUK -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari keripik pisang..."
+                oninput="cariProduk()">
+
+            <button type="button" onclick="cariProduk()">
+                Cari
+            </button>
+
+        </div>
+
+
+        <!-- FILTER DAN PENGURUTAN -->
+        <div class="filter-produk">
+
+            <select id="filterKategori" onchange="cariProduk()">
+                <option value="semua">Semua Produk</option>
+                <option value="keripik-pisang">Keripik Pisang</option>
+            </select>
+
+            <select id="urutHarga" onchange="urutkanProduk()">
+                <option value="default">Urutkan Produk</option>
+                <option value="termurah">Harga Termurah</option>
+                <option value="termahal">Harga Termahal</option>
+            </select>
+
+        </div>
+
+
+        <!-- DAFTAR PRODUK KERIPIK PISANG -->
+        <div class="produk-list" id="produkList">
+
+
+            <!-- PRODUK 1 -->
+            <div class="produk-card"
+                 data-id="P001"
+                 data-nama="keripik pisang original"
+                 data-kategori="keripik-pisang"
+                 data-harga="7000"
+                 data-gambar="../image/original.png">
+
+                <div class="produk-image">
+                    <img src="../image/original.png" alt="Pisang Original">
+                    <span class="label-produk">Terlaris</span>
+                </div>
+
+                <div class="produk-info">
+                    <span class="kategori-produk">Keripik Pisang</span>
+                    <h3>Keripik Pisang Original</h3>
+                   
+                    <div class="produk-bottom">
+                        <strong>Rp7.000</strong>
+
+                        <button class="tambah-keranjang"
+                                data-id="P001"
+                                data-nama="Keripik Pisang Original"
+                                data-harga="7000"
+                                data-gambar="../image/original.png">
+                            + Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PRODUK 2 -->
+            <div class="produk-card"
+                 data-id="P002"
+                 data-nama="keripik pisang cokelat"
+                 data-kategori="keripik-pisang"
+                 data-harga="10000"
+                 data-gambar="../image/coklat.png">
+
+                <div class="produk-image">
+                    <img src="../image/coklat.png" alt="Pisang Cokelat">
+                </div>
+
+                <div class="produk-info">
+                    <span class="kategori-produk">Keripik Pisang</span>
+                    <h3>Keripik Pisang Cokelat</h3>
+                   
+                    <div class="produk-bottom">
+                        <strong>Rp10.000</strong>
+
+                        <button class="tambah-keranjang"
+                                data-id="P002"
+                                data-nama="Keripik Pisang Cokelat"
+                                data-harga="10000"
+                                data-gambar="../image/coklat.png">
+                            + Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PRODUK 3 -->
+            <div class="produk-card"
+                 data-id="P003"
+                 data-nama="keripik pisang balado"
+                 data-kategori="keripik-pisang"
+                 data-harga="10000"
+                 data-gambar="../image/balado.png">
+
+                <div class="produk-image">
+                    <img src="../image/balado.png" alt="Pisang Balado">
+                </div>
+
+                <div class="produk-info">
+                    <span class="kategori-produk">Keripik Pisang</span>
+                    <h3>Keripik Pisang Balado</h3>
+                   
+
+                    <div class="produk-bottom">
+                        <strong>Rp10.000</strong>
+
+                        <button class="tambah-keranjang"
+                                data-id="P003"
+                                data-nama="Keripik Pisang Balado"
+                                data-harga="10000"
+                                data-gambar="../image/balado.png">
+                            + Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PRODUK 4 -->
+            <div class="produk-card"
+                 data-id="P004"
+                 data-nama="keripik pisang caramel"
+                 data-kategori="keripik-pisang"
+                 data-harga="10000"
+                 data-gambar="../image/caramel.png">
+
+                <div class="produk-image">
+                    <img src="../image/caramel.png" alt="Pisang Caramel">
+                </div>
+
+                <div class="produk-info">
+                    <span class="kategori-produk">Keripik Pisang</span>
+                    <h3>Keripik Pisang Caramel</h3>
+                  
+                    <div class="produk-bottom">
+                        <strong>Rp10.000</strong>
+
+                        <button class="tambah-keranjang"
+                                data-id="P004"
+                                data-nama="Keripik Pisang Caramel"
+                                data-harga="10000"
+                                data-gambar="../image/caramel.png">
+                            + Keranjang
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+
+            <!-- PESAN JIKA PRODUK TIDAK DITEMUKAN -->
+            <p id="pesanKosong"
+               class="pesan-kosong"
+               style="display:none;">
+                Produk tidak ditemukan.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container footer-content">
+
+            <div>
+                <h2><span>Snack</span>Market</h2>
+                <p>Tempat menemukan camilan favoritmu.</p>
+            </div>
+
+            <div>
+                <h3>Navigasi</h3>
+                <a href="../index.html">Beranda</a>
+                <a href="../index.html#kategori">Kategori</a>
+                <a href="pisang.html">Keripik Pisang</a>
+            </div>
+
+            <div>
+                <h3>Informasi</h3>
+                <p>Jam Operasional: 08.00 - 21.00</p>
+                <p>Pelayanan Pemesanan Online</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            &copy; 2026 SnackMarket. Semua Hak Dilindungi.
+        </div>
+
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../JavaScript/index.js"></script>
+
+</body>
+</html>

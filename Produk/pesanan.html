@@ -1,0 +1,101 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Pesanan Berhasil - SnackMarket</title>
+
+    <link rel="stylesheet" href="../CSS/pesanan.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="container">
+            <h2>SnackMarket</h2>
+            <p>Terima kasih telah berbelanja!</p>
+        </div>
+    </header>
+
+    <main class="container">
+
+        <section class="success-box">
+
+            <div class="success-icon">✓</div>
+
+            <h1>Pesanan Berhasil!</h1>
+
+            <p class="success-message">
+                Terima kasih! Pesanan kamu berhasil dibuat.
+            </p>
+
+            <div class="detail-pesanan">
+
+                <h3>Detail Pesanan</h3>
+
+                <p>Nomor Pesanan:
+                    <strong id="nomorPesanan">-</strong>
+                </p>
+
+                <p>Tanggal:
+                    <strong id="tanggalPesanan">-</strong>
+                </p>
+
+                <p>Nama Pembeli:
+                    <strong id="namaPembeli">-</strong>
+                </p>
+
+                <p>Email:
+                    <strong id="emailPembeli">-</strong>
+                </p>
+
+                <p>Nomor Telepon:
+                    <strong id="teleponPembeli">-</strong>
+                </p>
+
+                <p>Alamat Pengiriman:
+                    <strong id="alamatPengiriman">-</strong>
+                </p>
+
+                <p>Status Pesanan:
+                    <strong class="status-pesanan">
+                        Menunggu Diproses
+                    </strong>
+                </p>
+
+            </div>
+
+            <div class="ringkasan">
+
+                <h3>Produk yang Dipesan</h3>
+
+                <div id="daftarProduk"></div>
+
+                <div class="total-pesanan">
+                    Total Pembayaran:
+                    <strong id="totalPembayaran">Rp0</strong>
+                </div>
+
+            </div>
+
+            <div class="tombol-aksi">
+
+                <a href="../index.html" class="btn-utama">
+                    Kembali ke Beranda
+                </a>
+
+                <a href="keranjang.html" class="btn-kembali">
+                    Lihat Keranjang
+                </a>
+
+            </div>
+
+        </section>
+
+    </main>
+
+    <script src="../JavaScript/index.js"></script>
+
+</body>
+</html>

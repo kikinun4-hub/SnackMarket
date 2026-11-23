@@ -1,0 +1,69 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard Admin - SnackMarket</title>
+    <link rel="stylesheet" href="../CSS/dashbor.css">
+</head>
+<body>
+
+ <header class="header">
+    <h2>SnackMarket <span>Admin</span></h2>
+
+    <button type="button" id="tombolKeluar">
+        Keluar
+    </button>
+</header>
+
+    <main class="container">
+
+        <h1>Dashboard Admin</h1>
+        <p class="deskripsi">Selamat datang di halaman pengelolaan SnackMarket.</p>
+
+        <section class="statistik">
+
+            <div class="kartu">
+                <h3>Total Pesanan</h3>
+                <p id="totalPesanan">0</p>
+            </div>
+
+            <div class="kartu">
+                <h3>Menunggu Diproses</h3>
+                <p id="pesananMenunggu">0</p>
+            </div>
+
+             <div class="kartu">
+                <h3>Pesanan Diproses</h3>
+                 <p id="pesananDiproses">0</p>
+          </div>
+
+            <div class="kartu">
+                <h3>Pesanan Selesai</h3>
+                <p id="pesananSelesai">0</p>
+            </div>
+
+        </section>
+
+        <section class="menu-admin">
+
+            <h2>Menu Pengelolaan</h2>
+
+            <a href="pesanan.html" class="menu-card">
+                <div class="ikon">📦</div>
+                <div>
+                    <h3>Pesanan Masuk</h3>
+                    <p>Lihat dan kelola pesanan dari pembeli.</p>
+                </div>
+                <span>→</span>
+            </a>
+
+        </section>
+
+    </main>
+
+    <script src="../JavaScript/admin.js"></script>
+
+</body>
+</html>

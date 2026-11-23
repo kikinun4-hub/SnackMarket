@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keranjang Belanja - SnackMarket</title>
+
+    <link rel="stylesheet" href="../CSS/keranjang.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+
+            <div class="logo">SnackMarket</div>
+
+            <nav>
+                <a href="../index.html">Beranda</a>
+                <a href="../index.html#kategori">Kategori</a>
+                <a href="../Produk/semua-produk.html">Semua Produk</a>
+                <a href="../index.html#tentang">Tentang Kami</a>
+            </nav>
+
+            <div class="nav-button">
+                <a href="keranjang.html" class="btn-login">
+                    Keranjang (<span id="jumlahKeranjang">0</span>)
+                </a>
+
+                <a href="login.html" class="btn-login">Masuk</a>
+                <a href="daftar.html" class="btn-register">Daftar</a>
+                <a href="../Produk/riwayat.html" class="btn-riwayat">
+                     Riwayat Pesanan</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- KONTEN KERANJANG -->
+    <main class="keranjang-container">
+
+        <div class="judul-keranjang">
+            <h1>Keranjang Belanja</h1>
+            <p>Periksa kembali produk pilihan kamu sebelum melanjutkan.</p>
+        </div>
+
+        <div class="keranjang-layout">
+
+            <!-- DAFTAR PRODUK -->
+            <section class="daftar-keranjang">
+
+                <div class="keranjang-header">
+                    <h3>Produk Pilihan Kamu</h3>
+                   
+                </div>
+
+                <div id="daftarKeranjang">
+                    <!-- Produk ditampilkan melalui JavaScript -->
+                </div>
+
+            </section>
+
+
+            <!-- RINGKASAN PESANAN -->
+            <aside class="ringkasan">
+
+                <h2>Ringkasan Pesanan</h2>
+
+                <div class="ringkasan-detail">
+                    <span>Jumlah Produk</span>
+                    <span id="totalItem">0 item</span>
+                </div>
+
+                <div class="ringkasan-detail">
+                    <span>Subtotal</span>
+                    <span id="subtotal">Rp0</span>
+                </div>
+
+                <div class="ringkasan-detail">
+                    <span>Ongkos Kirim</span>
+                    <span id="ongkir">Rp10.000</span>
+                </div>
+
+                <div class="garis"></div>
+
+                <div class="total-pembayaran">
+                    <strong>Total Pembayaran</strong>
+                    <strong id="totalPembayaran">Rp0</strong>
+                </div>
+
+                <button id="btnCheckout" class="btn-checkout">
+                    Lanjutkan Pesanan
+                </button>
+
+            </aside>
+
+        </div>
+
+        <a href="../index.html" class="btn-belanja">
+            &larr; Lanjut Belanja
+        </a>
+    </main>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 SnackMarket. Semua Hak Dilindungi.</p>
+    </footer>
+
+
+   
+<script src="../JavaScript/index.js"></script>
+</body>
+</html>

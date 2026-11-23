@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - SnackMarket</title>
+
+    <link rel="stylesheet" href="../CSS/login.css">
+</head>
+<body>
+
+    <div class="login-container">
+
+        <div class="login-box">
+
+            <div class="login-header">
+                <h1>SnackMarket</h1>
+                <p>Selamat Datang Kembali!</p>
+                <span>Silakan login untuk melanjutkan pesanan.</span>
+            </div>
+
+            <form id="formLogin">
+
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input
+                        type="email"
+                        id="email"
+                        placeholder="Masukkan email"
+                        required>
+                </div>
+
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input
+                        type="password"
+                        id="password"
+                        placeholder="Masukkan password"
+                        required>
+                </div>
+
+                <p id="pesanLogin"></p>
+
+                <button type="submit" class="btn-login">
+                    Login
+                </button>
+
+            </form>
+
+            <div class="login-footer">
+                <p>Belum punya akun?</p>
+                <a href="daftar.html">Daftar Sekarang</a>
+            </div>
+
+            <div class="back-home">
+                <a href="../index.html">&larr; Kembali ke Beranda</a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <script src="../JavaScript/index.js"></script>
+
+</body>
+</html>

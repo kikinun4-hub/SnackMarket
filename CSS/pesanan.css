@@ -1,0 +1,141 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6fa;
+    color: #333;
+}
+
+.header {
+    background: #064b80;
+    color: white;
+    padding: 22px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: auto;
+}
+
+.header h2 {
+    margin-bottom: 5px;
+}
+
+.success-box {
+    background: white;
+    margin: 35px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(0,0,0,0.08);
+}
+
+.success-icon {
+    width: 65px;
+    height: 65px;
+    background: #e2f8e9;
+    color: #168a42;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 40px;
+    font-weight: bold;
+    margin: 0 auto 18px;
+}
+
+.success-box h1 {
+    text-align: center;
+    color: #168a42;
+    margin-bottom: 10px;
+}
+
+.success-message {
+    text-align: center;
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.detail-pesanan,
+.ringkasan {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 22px;
+    margin-top: 20px;
+}
+
+.detail-pesanan h3,
+.ringkasan h3 {
+    margin-bottom: 18px;
+    color: #064b80;
+}
+
+.detail-pesanan p {
+    margin-bottom: 13px;
+    line-height: 1.5;
+}
+
+.status-pesanan {
+    color: #d18b00;
+}
+
+.produk-item {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 12px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.total-pesanan {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-top: 20px;
+    font-size: 18px;
+    color: #064b80;
+}
+
+.tombol-aksi {
+    display: flex;
+    justify-content: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+.tombol-aksi a {
+    text-decoration: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn-utama {
+    background: #064b80;
+    color: white;
+}
+
+.btn-kembali {
+    background: #eee;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .success-box {
+        padding: 20px;
+    }
+
+    .total-pesanan {
+        font-size: 15px;
+    }
+
+    .produk-item {
+        flex-direction: column;
+    }
+}

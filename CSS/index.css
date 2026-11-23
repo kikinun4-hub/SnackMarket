@@ -1,0 +1,884 @@
+
+/* =========================
+   RESET DAN DASAR
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #F5F8FC;
+    color: #17385F;
+}
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background-color: #0B4F80;
+    box-shadow: 0 2px 12px rgba(11, 79, 128, 0.10);
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: #FFFFFF;
+}
+
+.logo span,
+.footer span {
+    color: #DCEBFA;
+}
+
+nav {
+    display: flex;
+    gap: 30px;
+}
+
+nav a {
+    font-size: 14px;
+    color: #FFFFFF;
+    transition: 0.3s;
+}
+
+nav a:hover,
+nav a.active {
+    color: #BBDDF5;
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.btn-login,
+.btn-register {
+    padding: 10px 19px;
+    border-radius: 6px;
+    font-size: 14px;
+}
+
+.btn-login {
+    color: #FFFFFF;
+    border: 1px solid #FFFFFF;
+}
+
+.btn-register {
+    color: #0B4F80;
+    background-color: #FFFFFF;
+}
+
+.btn-register:hover {
+    background-color: #DCEBFA;
+}
+
+
+/* =========================
+   HERO SECTION
+========================= */
+
+.hero {
+    background: linear-gradient(120deg, #E8F1FC, #F5F8FC);
+    padding: 65px 0;
+}
+
+.hero-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 45px;
+}
+
+.hero-text {
+    flex: 1;
+}
+
+.tagline,
+.small-title {
+    color: #0B4F80;
+    font-size: 12px;
+    font-weight: bold;
+    letter-spacing: 1.5px;
+}
+
+.hero-text h1 {
+    font-size: 43px;
+    line-height: 1.2;
+    margin: 18px 0;
+}
+
+.hero-text h1 span {
+    color: #397DB0;
+}
+
+.hero-text p {
+    color: #65788C;
+    font-size: 15px;
+    line-height: 1.8;
+    max-width: 480px;
+    margin-bottom: 28px;
+}
+
+.btn-primary {
+    display: inline-block;
+    padding: 13px 25px;
+    background-color: #0862C9;
+    color: white;
+    border-radius: 7px;
+    font-size: 14px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: #0B4F80;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 100%;
+    height: 340px;
+    object-fit: cover;
+    border-radius: 18px;
+}
+
+
+/* =========================
+   JUDUL BAGIAN
+========================= */
+
+.section-heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.section-heading h2 {
+    font-size: 27px;
+    margin-top: 8px;
+}
+
+
+/* =========================
+   KATEGORI
+========================= */
+
+.kategori {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.kategori-list {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 18px;
+}
+
+.kategori-card {
+    background-color: #FFFFFF;
+    padding: 25px 12px;
+    text-align: center;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px rgba(11, 79, 128, 0.08);
+    transition: 0.3s;
+}
+
+.kategori-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 18px rgba(11, 79, 128, 0.13);
+    border-color: #75A9D5;
+}
+
+.kategori-icon {
+    font-size: 35px;
+    margin-bottom: 12px;
+}
+
+.kategori-card h3 {
+    font-size: 14px;
+}
+
+
+/* =========================
+   PRODUK
+========================= */
+
+.produk-section {
+    background-color: #EDF4FC;
+    padding: 65px 0;
+}
+
+.lihat-semua {
+    color: #0B4F80;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.search-box {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.search-box input {
+    flex: 1;
+    padding: 14px 17px;
+    border: 1px solid #DCE6F2;
+    border-radius: 7px;
+    outline: none;
+    font-size: 14px;
+}
+
+.search-box input:focus {
+    border-color: #397DB0;
+}
+
+.search-box button {
+    padding: 0 25px;
+    background-color: #0862C9;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+}
+
+.search-box button:hover {
+    background-color: #0B4F80;
+}
+
+.produk-list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 22px;
+}
+
+.produk-card {
+    background-color: #FFFFFF;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 3px 12px rgba(11, 79, 128, 0.08);
+    transition: 0.3s;
+}
+
+.produk-card:hover {
+    transform: translateY(-5px);
+}
+
+.produk-image {
+    height: 190px;
+    position: relative;
+}
+
+.produk-image img {
+    width: 70%;
+    height: 120%;
+    object-fit: cover;
+}
+
+.label-produk {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: #DCEBFA;
+    color: #0B4F80;
+    padding: 6px 10px;
+    border-radius: 5px;
+    font-size: 11px;
+}
+
+.produk-info {
+    padding: 17px;
+}
+
+.kategori-produk {
+    color: #0B4F80;
+    font-size: 12px;
+}
+
+.produk-info h3 {
+    font-size: 17px;
+    margin: 9px 0;
+}
+
+.produk-info p {
+    color: #77889A;
+    font-size: 12px;
+    line-height: 1.5;
+    min-height: 36px;
+}
+
+.produk-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 17px;
+    gap: 8px;
+}
+
+.produk-bottom strong {
+    color: #0B4F80;
+    font-size: 15px;
+}
+
+.produk-bottom button {
+    background-color: #E8F1FC;
+    border: none;
+    color: #0B4F80;
+    padding: 9px 10px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 11px;
+}
+
+.produk-bottom button:hover {
+    background-color: #0862C9;
+    color: white;
+}
+
+.pesan-kosong {
+    display: none;
+    text-align: center;
+    padding: 30px;
+    color: #77889A;
+}
+
+
+/* =========================
+   TENTANG KAMI
+========================= */
+
+.tentang {
+    padding-top: 75px;
+    padding-bottom: 75px;
+    display: flex;
+    align-items: center;
+    gap: 55px;
+}
+
+.tentang-image,
+.tentang-text {
+    flex: 1;
+}
+
+.tentang-image img {
+    width: 100%;
+    height: 320px;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.tentang-text h2 {
+    font-size: 30px;
+    line-height: 1.3;
+    margin: 15px 0;
+    color: #0B4F80;
+}
+
+.tentang-text p {
+    color: #65788C;
+    line-height: 1.8;
+    font-size: 14px;
+    margin-bottom: 25px;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background-color: #0B4F80;
+    color: white;
+    padding-top: 45px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr 1.5fr;
+    gap: 40px;
+    padding-bottom: 40px;
+}
+
+.footer h2 {
+    font-size: 25px;
+    margin-bottom: 12px;
+}
+
+.footer h3 {
+    margin-bottom: 15px;
+    font-size: 16px;
+}
+
+.footer p,
+.footer a {
+    display: block;
+    color: #EAF3FC;
+    font-size: 13px;
+    margin-bottom: 10px;
+}
+
+.footer a:hover {
+    color: #BBDDF5;
+}
+
+.copyright {
+    text-align: center;
+    padding: 18px;
+    border-top: 1px solid rgba(255, 255, 255, 0.20);
+    color: #DCEBFA;
+    font-size: 12px;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 20px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .hero-content {
+        flex-direction: column;
+    }
+
+    .hero-text,
+    .hero-image {
+        width: 100%;
+    }
+
+    .produk-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .kategori-list {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 550px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .hero-text h1 {
+        font-size: 32px;
+    }
+
+    .hero-image img {
+        height: 230px;
+    }
+
+    .kategori-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .produk-list {
+        grid-template-columns: 1fr;
+    }
+
+    .tentang {
+        flex-direction: column;
+    }
+
+    .footer-content {
+        grid-template-columns: 1fr;
+        gap: 25px;
+    }
+
+    .section-heading h2 {
+        font-size: 22px;
+    }
+
+    .header-right {
+        gap: 7px;
+    }
+
+    .btn-login,
+    .btn-register {
+        padding: 9px 12px;
+    }
+}
+
+
+/* =========================
+   KATEGORI PRODUK
+========================= */
+
+.kategori-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 20px;
+    margin-top: 25px;
+}
+
+.kategori-card {
+    background: #FFFFFF;
+    padding: 25px 15px;
+    border-radius: 12px;
+    text-align: center;
+    text-decoration: none;
+    color: #17385F;
+    border: 1px solid #DCE6F2;
+    transition: 0.3s;
+}
+
+.kategori-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px rgba(11, 79, 128, 0.12);
+    border-color: #75A9D5;
+}
+
+.kategori-icon {
+    font-size: 45px;
+    margin-bottom: 12px;
+}
+
+.kategori-card h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.kategori-card p {
+    font-size: 13px;
+    color: #77889A;
+}
+
+
+/* =========================
+   FILTER PRODUK
+========================= */
+
+.filter-produk {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.filter-produk select,
+.search-box select {
+    padding: 12px 15px;
+    border: 1px solid #DCE6F2;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-produk select:focus,
+.search-box select:focus {
+    border-color: #397DB0;
+}
+
+
+/* =========================
+   HALAMAN KATEGORI PRODUK
+========================= */
+
+.produk.container {
+    padding-top: 30px;
+    padding-bottom: 40px;
+}
+
+.produk.container > h2 {
+    font-size: 28px;
+    margin-bottom: 5px;
+}
+
+.produk.container > p {
+    margin-bottom: 15px;
+}
+
+.search-box {
+    align-items: center;
+}
+
+.search-box input {
+    min-width: 0;
+}
+
+.search-box select {
+    min-width: 150px;
+}
+
+
+/* =========================
+   KARTU PRODUK
+========================= */
+
+.produk-card {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 15px;
+}
+
+.produk-image {
+    width: 100%;
+    height: 220px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+}
+
+.produk-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    display: block;
+}
+
+.produk-card h3 {
+    font-size: 16px;
+    margin: 12px 15px 8px;
+}
+
+.produk-card p {
+    font-size: 15px;
+    font-weight: bold;
+    color: #0B4F80;
+    margin: 0 15px 12px;
+}
+
+.produk-card .tambah-keranjang {
+    margin: 0 15px;
+    padding: 11px;
+    background-color: #E8F1FC;
+    color: #0B4F80;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 13px;
+    transition: 0.3s;
+}
+
+.produk-card .tambah-keranjang:hover {
+    background-color: #0862C9;
+    color: white;
+}
+
+
+/* =========================
+   HEADER DAN FOOTER
+========================= */
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.footer {
+    padding: 25px 0;
+    text-align: center;
+}
+
+.footer p {
+    margin: 0;
+}
+
+
+/* =========================
+   RESPONSIVE
+========================= */
+
+@media (max-width: 900px) {
+    .produk-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .search-box {
+        flex-wrap: wrap;
+    }
+
+    .search-box input {
+        flex-basis: 100%;
+    }
+}
+
+@media (max-width: 600px) {
+    .produk-list {
+        grid-template-columns: 1fr;
+    }
+
+    .filter-produk {
+        flex-direction: column;
+    }
+
+    .filter-produk select,
+    .search-box select {
+        width: 100%;
+    }
+
+    .search-box {
+        flex-direction: column;
+    }
+
+    .search-box input {
+        width: 100%;
+    }
+
+    .kategori-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .nav-button {
+        flex-wrap: wrap;
+    }
+}
+
+
+/* =========================
+   TAMPILAN HP
+========================= */
+
+@media (max-width: 600px) {
+    .kategori-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 12px;
+    }
+
+    .kategori-card {
+        padding: 18px 10px;
+    }
+
+    .kategori-icon {
+        font-size: 35px;
+    }
+}
+
+
+/* =========================
+   FILTER PRODUK
+========================= */
+
+.filter-produk {
+    display: flex;
+    justify-content: space-between;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.filter-produk select {
+    padding: 12px 15px;
+    border: 1px solid #DCE6F2;
+    border-radius: 8px;
+    background: white;
+    font-size: 14px;
+    cursor: pointer;
+    outline: none;
+}
+
+.filter-produk select:focus {
+    border-color: #397DB0;
+}
+
+@media (max-width: 600px) {
+    .filter-produk {
+        flex-direction: column;
+    }
+
+    .filter-produk select {
+        width: 100%;
+    }
+}
+
+
+/* =========================
+   TOMBOL RIWAYAT PESANAN
+========================= */
+
+.btn-riwayat {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: white;
+    color: #0B4F80;
+    border: 1px solid #0B4F80;
+    border-radius: 7px;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: normal;
+    transition: 0.3s;
+}
+
+.btn-riwayat:hover {
+    background-color: #0B4F80;
+    color: white;
+}
+
+.btn-admin {
+    background: #0862C9;
+    color: white !important;
+    padding: 12px 20px;
+    border-radius: 8px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+.btn-admin:hover {
+    background: #0B4F80;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: #BBDDF5;
+    text-decoration: underline;
+}

@@ -1,0 +1,180 @@
+
+/* ==============================
+   RESET
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6fa;
+}
+
+/* ==============================
+   CONTAINER
+============================== */
+
+.register-container {
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 20px;
+}
+
+/* ==============================
+   REGISTER BOX
+============================== */
+
+.register-box {
+    background: white;
+    width: 100%;
+    max-width: 450px;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+.register-header {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.register-header h1 {
+    color: #064b80;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.register-header h2 {
+    font-size: 21px;
+    margin-bottom: 8px;
+}
+
+.register-header p {
+    color: #777;
+    font-size: 13px;
+}
+
+/* ==============================
+   FORM
+============================== */
+
+.form-group {
+    margin-bottom: 17px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 14px;
+    outline: none;
+}
+
+.form-group input:focus {
+    border-color: #064b80;
+}
+
+/* ==============================
+   PESAN REGISTER
+============================== */
+
+#pesanRegister {
+    font-size: 13px;
+    margin-bottom: 12px;
+    color: #d93025;
+}
+
+/* ==============================
+   TOMBOL
+============================== */
+
+.btn-register {
+    width: 100%;
+    padding: 13px;
+    background: #064b80;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.btn-register:hover {
+    background: #04375e;
+}
+
+/* ==============================
+   FOOTER
+============================== */
+
+.register-footer {
+    text-align: center;
+    margin-top: 22px;
+    font-size: 14px;
+}
+
+.register-footer a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #064b80;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.register-footer a:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   KEMBALI
+============================== */
+
+.back-home {
+    text-align: center;
+    margin-top: 22px;
+}
+
+.back-home a {
+    color: #555;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.back-home a:hover {
+    color: #064b80;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 480px) {
+
+    .register-box {
+        padding: 25px 20px;
+    }
+
+    .register-header h1 {
+        font-size: 26px;
+    }
+
+}

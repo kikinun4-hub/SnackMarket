@@ -1,0 +1,189 @@
+
+/* ==============================
+   RESET DAN DASAR
+============================== */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f5f7fa;
+    color: #333;
+}
+
+/* ==============================
+   HEADER
+============================== */
+
+.header {
+    background-color: #064b80;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1100px;
+    margin: auto;
+}
+
+.header h2 {
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+
+.header p {
+    font-size: 14px;
+    color: #dceaf5;
+}
+
+/* ==============================
+   KONTEN CHECKOUT
+============================== */
+
+.checkout-container {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.checkout-container > h2 {
+    margin-bottom: 25px;
+    color: #064b80;
+    font-size: 24px;
+}
+
+/* ==============================
+   KOTAK CHECKOUT
+============================== */
+
+.checkout-box {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+}
+
+.checkout-box h3 {
+    color: #064b80;
+    margin-bottom: 18px;
+    font-size: 19px;
+}
+
+/* ==============================
+   INFORMASI PEMBELI
+============================== */
+
+.checkout-box p {
+    margin-bottom: 12px;
+    font-size: 15px;
+}
+
+/* ==============================
+   FORM ALAMAT
+============================== */
+
+.checkout-box label {
+    display: block;
+    margin-bottom: 8px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.checkout-box input,
+.checkout-box textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    font-family: Arial, sans-serif;
+    outline: none;
+}
+
+.checkout-box input:focus,
+.checkout-box textarea:focus {
+    border-color: #064b80;
+}
+
+.checkout-box textarea {
+    min-height: 100px;
+    resize: vertical;
+}
+
+/* ==============================
+   RINGKASAN PEMBAYARAN
+============================== */
+
+#ringkasanPesanan {
+    margin-bottom: 15px;
+}
+
+#subtotal,
+#ongkir,
+#totalPembayaran {
+    font-weight: bold;
+}
+
+#totalPembayaran {
+    color: #064b80;
+}
+
+/* ==============================
+   TOMBOL CHECKOUT
+============================== */
+
+#konfirmasiPesanan {
+    width: 100%;
+    padding: 14px;
+    background-color: #064b80;
+    color: white;
+    border: none;
+    border-radius: 7px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#konfirmasiPesanan:hover {
+    background-color: #04375e;
+}
+
+.btn-kembali {
+    display: block;
+    text-align: center;
+    margin-top: 18px;
+    color: #064b80;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn-kembali:hover {
+    text-decoration: underline;
+}
+
+/* ==============================
+   RESPONSIVE
+============================== */
+
+@media (max-width: 600px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .checkout-box {
+        padding: 18px;
+    }
+
+    .checkout-container > h2 {
+        font-size: 21px;
+    }
+
+}

@@ -1,0 +1,506 @@
+
+/* =========================
+   RESET
+========================= */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #F5F8FC;
+    color: #17385F;
+}
+
+
+/* =========================
+   HEADER
+========================= */
+
+.header {
+    background: #064B80;
+    color: white;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    padding: 0;
+    box-shadow: 0 2px 12px rgba(0, 0, 0, 0.06);
+}
+
+.container {
+    width: 88%;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.navbar {
+    min-height: 75px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+.logo {
+    font-size: 25px;
+    font-weight: bold;
+    color: white;
+    white-space: nowrap;
+}
+
+.navbar nav {
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.navbar nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    white-space: nowrap;
+    transition: 0.3s;
+}
+
+.navbar nav a:hover,
+.navbar nav a.active {
+    color: #BBDDF5;
+}
+
+.nav-button {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    white-space: nowrap;
+}
+
+.nav-button a {
+    display: inline-block;
+    text-decoration: none;
+    padding: 10px 16px;
+    border-radius: 7px;
+    font-size: 14px;
+    transition: 0.3s;
+}
+
+/* KERANJANG DAN MASUK */
+.btn-login {
+    color: white;
+    border: 1px solid white;
+}
+
+/* DAFTAR */
+.btn-register {
+    background: white;
+    color: #064B80 !important;
+    border: 1px solid white;
+}
+
+.btn-register:hover {
+    background: #DCEBFA;
+}
+
+/* RIWAYAT PESANAN */
+.btn-riwayat {
+    background: transparent;
+    color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 10px 16px;
+}
+
+.btn-riwayat:hover {
+    background: white;
+    color: #064B80;
+}
+
+
+/* =========================
+   HALAMAN KERANJANG
+========================= */
+
+.keranjang-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 45px auto;
+    min-height: 450px;
+}
+
+.judul-keranjang {
+    margin-bottom: 30px;
+}
+
+.judul-keranjang h1 {
+    font-size: 32px;
+    margin-bottom: 10px;
+}
+
+.judul-keranjang p {
+    color: #68778D;
+}
+
+
+/* =========================
+   LAYOUT
+========================= */
+
+.keranjang-layout {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+    align-items: start;
+}
+
+.daftar-keranjang,
+.ringkasan {
+    background: white;
+    border: 1px solid #DCE3ED;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+.keranjang-header {
+    background: #E9F1FC;
+    padding: 20px;
+}
+
+.keranjang-header h3 {
+    font-size: 18px;
+    color: #17385F;
+}
+
+
+/* =========================
+   ITEM PRODUK
+========================= */
+
+.item-keranjang {
+    display: grid;
+    grid-template-columns: 90px 1fr auto;
+    gap: 18px;
+    align-items: center;
+    padding: 20px;
+    border-bottom: 1px solid #E5EAF1;
+}
+
+.item-keranjang img {
+    width: 90px;
+    height: 90px;
+    object-fit: contain;
+    border-radius: 9px;
+    background: #F5F8FC;
+}
+
+.info-produk h3 {
+    font-size: 16px;
+    margin-bottom: 8px;
+}
+
+.info-produk p {
+    color: #64748B;
+    margin-bottom: 10px;
+}
+
+.harga-produk {
+    color: #064B80 !important;
+    font-weight: bold;
+}
+
+.kontrol-produk {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.kontrol-produk button {
+    width: 35px;
+    height: 35px;
+    border: none;
+    background: #E8EEF7;
+    border-radius: 8px;
+    cursor: pointer;
+    font-size: 18px;
+    color: #17385F;
+}
+
+.kontrol-produk button:hover {
+    background: #CBDCF4;
+}
+
+.kontrol-produk span {
+    min-width: 20px;
+    text-align: center;
+}
+
+.aksi-produk {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-left: 0;
+}
+
+.subtotal-produk {
+    font-weight: bold;
+    color: #064B80;
+}
+
+.btn-hapus {
+    border: none;
+    background: none;
+    color: #E53935;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+.btn-hapus:hover {
+    text-decoration: underline;
+}
+
+
+/* =========================
+   RINGKASAN PESANAN
+========================= */
+
+.ringkasan h2 {
+    background: #064B80;
+    color: white;
+    padding: 20px;
+    font-size: 20px;
+}
+
+.ringkasan-detail {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 15px 20px;
+    font-size: 15px;
+}
+
+.garis {
+    height: 1px;
+    background: #E0E6EF;
+    margin: 5px 20px;
+}
+
+.total-pembayaran {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    padding: 20px;
+    font-size: 17px;
+}
+
+.total-pembayaran strong:last-child {
+    color: #075FC5;
+}
+
+.btn-checkout {
+    display: block;
+    width: calc(100% - 40px);
+    margin: 0 20px 20px;
+    padding: 15px;
+    background: #075FC5;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.btn-checkout:hover {
+    background: #064B80;
+}
+
+
+/* =========================
+   KERANJANG KOSONG
+========================= */
+
+.keranjang-kosong {
+    text-align: center;
+    padding: 45px 20px;
+    color: #68778D;
+}
+
+.keranjang-kosong h3 {
+    color: #17385F;
+    margin-bottom: 10px;
+}
+
+.keranjang-kosong p {
+    margin-bottom: 18px;
+}
+
+.btn-kosong {
+    display: inline-block;
+    background: #075FC5;
+    color: white;
+    padding: 11px 20px;
+    border-radius: 7px;
+    text-decoration: none;
+}
+
+.btn-kosong:hover {
+    background: #064B80;
+}
+
+
+/* =========================
+   LANJUT BELANJA
+========================= */
+
+.btn-belanja {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 12px 20px;
+    color: #075FC5;
+    border: 1px solid #075FC5;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.btn-belanja:hover {
+    background: #E9F1FC;
+}
+
+
+/* =========================
+   FOOTER
+========================= */
+
+.footer {
+    background: #064B80;
+    color: white;
+    text-align: center;
+    padding: 22px;
+    margin-top: 40px;
+}
+
+
+/* =========================
+   RESPONSIVE TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .navbar {
+        padding: 20px 0;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+
+    .navbar nav {
+        order: 3;
+        width: 100%;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 18px;
+    }
+
+    .nav-button {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .keranjang-layout {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+/* =========================
+   RESPONSIVE HP
+========================= */
+
+@media (max-width: 550px) {
+
+    .container {
+        width: 92%;
+    }
+
+    .keranjang-container {
+        width: 94%;
+        margin: 30px auto;
+    }
+
+    .judul-keranjang h1 {
+        font-size: 25px;
+    }
+
+    .item-keranjang {
+        grid-template-columns: 70px 1fr;
+        gap: 12px;
+    }
+
+    .item-keranjang img {
+        width: 70px;
+        height: 70px;
+    }
+
+    
+.aksi-produk {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    gap: 15px;
+    padding-right: 100px;
+    padding-left: 0;
+}
+
+    .nav-button {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 7px;
+    }
+
+    .nav-button a {
+        padding: 9px 12px;
+    }
+
+    .ringkasan-detail {
+        font-size: 14px;
+    }
+
+    .total-pembayaran {
+        font-size: 15px;
+    }
+}
+
+/* POSISI SUBTOTAL DAN TOMBOL HAPUS */
+.item-keranjang {
+    position: relative;
+}
+
+.aksi-produk {
+    grid-column: 3;
+    grid-row: 1 / span 2;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: center;
+    justify-self: end;
+    gap: 15px;
+    padding: 0 25px 0 0;
+    margin: 0;
+    text-align: right;
+}
+
+.subtotal-produk {
+    text-align: right;
+}
+
+.btn-hapus {
+    text-align: right;
+}

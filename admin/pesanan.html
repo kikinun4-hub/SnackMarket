@@ -1,0 +1,48 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pesanan Masuk - SnackMarket</title>
+    <link rel="stylesheet" href="../CSS/pesanan-masuk.css">
+</head>
+<body>
+
+    <header class="header">
+        <h2>SnackMarket <span>Admin</span></h2>
+        <a href="dashbor.html">Dashboard</a>
+    </header>
+
+    <main class="container">
+
+        <h1>Pesanan Masuk</h1>
+        <p class="deskripsi">
+            Daftar pesanan yang dibuat oleh pembeli SnackMarket.
+        </p>
+
+        <div class="filter">
+            <label for="filterStatus">Filter Status:</label>
+            <select id="filterStatus">
+                <option value="semua">Semua Pesanan</option>
+                <option value="Menunggu Diproses">Menunggu Diproses</option>
+                <option value="Diproses">Diproses</option>
+                <option value="Dikirim">Dikirim</option>
+                <option value="Selesai">Selesai</option>
+            </select>
+        </div>
+
+        <div id="daftarPesanan">
+
+            <div class="pesanan-kosong">
+                Belum ada pesanan masuk.
+            </div>
+
+        </div>
+
+    </main>
+
+    <script src="../JavaScript/pesanan.js"></script>
+
+</body>
+</html>

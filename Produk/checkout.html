@@ -1,0 +1,79 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Checkout - SnackMarket</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/checkout.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+            <h2>SnackMarket</h2>
+            <p>Checkout Pesanan</p>
+        </div>
+    </header>
+
+    <!-- KONTEN CHECKOUT -->
+    <main class="container checkout-container">
+
+        <h2>Konfirmasi Pesanan</h2>
+
+        <!-- INFORMASI PEMBELI -->
+        <section class="checkout-box">
+            <h3>Informasi Pembeli</h3>
+
+            <p id="namaPembeli">Nama Pembeli</p>
+            <p id="emailPembeli">Email Pembeli</p>
+        </section>
+
+        <!-- ALAMAT PENGIRIMAN -->
+        <section class="checkout-box">
+            <h3>Alamat Pengiriman</h3>
+
+            <label for="alamat">Alamat Lengkap</label>
+            <textarea id="alamat" placeholder="Masukkan alamat lengkap"></textarea>
+
+            <label for="telepon">Nomor Telepon</label>
+            <input type="tel" id="telepon" placeholder="Masukkan nomor telepon">
+        </section>
+
+        <!-- RINGKASAN PESANAN -->
+        <section class="checkout-box">
+            <h3>Ringkasan Pesanan</h3>
+
+            <div id="ringkasanPesanan">
+                <!-- Produk akan ditampilkan melalui JavaScript -->
+            </div>
+        </section>
+
+        <!-- TOTAL PEMBAYARAN -->
+        <section class="checkout-box">
+            <h3>Rincian Pembayaran</h3>
+
+            <p>Subtotal: <span id="subtotal">Rp0</span></p>
+            <p>Ongkir: <span id="ongkir">Rp10.000</span></p>
+
+            <h3>Total: <span id="totalPembayaran">Rp0</span></h3>
+        </section>
+
+        <!-- TOMBOL -->
+        <button type="button" id="konfirmasiPesanan">
+            Konfirmasi Pesanan
+        </button>
+
+        <a href="keranjang.html" class="btn-kembali">
+            Kembali ke Keranjang
+        </a>
+
+    </main>
+
+ <script src="../JavaScript/index.js"></script>
+</body>
+</html>

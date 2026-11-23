@@ -1,0 +1,195 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Keripik Singkong - SnackMarket</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+
+            <div class="logo">SnackMarket</div>
+
+            <nav>
+                <a href="../index.html">Beranda</a>
+                <a href="../index.html#kategori">Kategori</a>
+                <a href="../singkong.html">Keripik Singkong</a>
+                <a href="../index.html#tentang">Tentang Kami</a>
+            </nav>
+
+            <div class="nav-button">
+             <a href="keranjang.html" class="btn-login">
+                Keranjang (<span id="jumlahKeranjang">0</span>)
+            </a>
+            <a href="login.html" class="btn-login">Masuk</a>
+            <a href="daftar.html" class="btn-register">Daftar</a> 
+            
+            <a href="../Produk/riwayat.html" class="btn-riwayat">
+                     Riwayat Pesanan</a>
+            </div>
+
+        </div>
+    </header>
+
+
+    <!-- DAFTAR PRODUK -->
+    <section class="produk container">
+
+        <h2>Keripik Singkong</h2>
+        <p>Pilih varian keripik singkong favoritmu.</p>
+
+        <!-- PENCARIAN DAN FILTER -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari keripik singkong..."
+                oninput="cariProduk()"
+            >
+
+            <select id="filterKategori" onchange="cariProduk()">
+                <option value="semua">Semua Varian</option>
+                <option value="keripik-singkong">Keripik Singkong</option>
+            </select>
+
+            <select id="urutHarga" onchange="urutkanProduk()">
+                <option value="default">Urutkan Harga</option>
+                <option value="termurah">Harga Termurah</option>
+                <option value="termahal">Harga Termahal</option>
+            </select>
+
+        </div>
+
+
+        <!-- PRODUK -->
+        <div class="produk-list" id="produkList">
+
+            <!-- PRODUK 1: ORIGINAL -->
+            <div class="produk-card"
+                 data-id="S001"
+                 data-nama="keripik singkong original"
+                 data-kategori="keripik-singkong"
+                 data-harga="8000">
+
+                <div class="produk-image">
+                    <img src="../image/original2.png" alt="Keripik Singkong Original">
+                </div>
+
+                <h3>Keripik Singkong Original</h3>
+                <p>Rp8.000</p>
+
+                <button class="tambah-keranjang"
+                        data-id="S001"
+                        data-nama="Keripik Singkong Original"
+                        data-harga="8000"
+                        data-gambar="../image/original2.png">
+                    + Keranjang
+                </button>
+            </div>
+
+
+            <!-- PRODUK 2: BARBEQUE -->
+            <div class="produk-card"
+                 data-id="S002"
+                 data-nama="keripik singkong barbeque"
+                 data-kategori="keripik-singkong"
+                 data-harga="10000">
+
+                <div class="produk-image">
+                    <img src="../image/barbeque2.png" alt="Keripik Singkong Barbeque">
+                </div>
+
+                <h3>Keripik Singkong Barbeque</h3>
+                <p>Rp10.000</p>
+
+                <button class="tambah-keranjang"
+                        data-id="S002"
+                        data-nama="Keripik Singkong Barbeque"
+                        data-harga="10000"
+                        data-gambar="../image/barbeque2.png">
+                    + Keranjang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 3: PEDAS -->
+            <div class="produk-card"
+                 data-id="S003"
+                 data-nama="keripik singkong pedas"
+                 data-kategori="keripik-singkong"
+                 data-harga="10000">
+
+                <div class="produk-image">
+                    <img src="../image/pedas2.png" alt="Keripik Singkong Pedas">
+                </div>
+
+                <h3>Keripik Singkong Pedas</h3>
+                <p>Rp10.000</p>
+
+                <button class="tambah-keranjang"
+                        data-id="S003"
+                        data-nama="Keripik Singkong Pedas"
+                        data-harga="10000"
+                        data-gambar="../image/pedas2.png">
+                    + Keranjang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 4: KEJU -->
+            <div class="produk-card"
+                 data-id="S004"
+                 data-nama="keripik singkong keju"
+                 data-kategori="keripik-singkong"
+                 data-harga="12000">
+
+                <div class="produk-image">
+                    <img src="../image/keju.png" alt="Keripik Singkong Keju">
+                </div>
+
+                <h3>Keripik Singkong Keju</h3>
+                <p>Rp12.000</p>
+
+                <button class="tambah-keranjang"
+                        data-id="S004"
+                        data-nama="Keripik Singkong Keju"
+                        data-harga="12000"
+                        data-gambar="./image/keju.png">
+                    + Keranjang
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PESAN JIKA PRODUK TIDAK DITEMUKAN -->
+        <p id="pesanKosong" style="display:none;">
+            Produk tidak ditemukan.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 SnackMarket. Semua Hak Dilindungi.</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../JavaScript/index.js"></script>
+
+</body>
+</html>

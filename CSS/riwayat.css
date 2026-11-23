@@ -1,0 +1,130 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f2f6fa;
+    color: #333;
+}
+
+.header {
+    background: #064b80;
+    color: white;
+    padding: 20px 0;
+}
+
+.container {
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+}
+
+.header h2 {
+    margin-bottom: 5px;
+}
+
+.btn-beranda {
+    background: white;
+    color: #064b80;
+    padding: 10px 16px;
+    border-radius: 6px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.halaman-riwayat {
+    margin: 35px 0;
+}
+
+.halaman-riwayat h1 {
+    color: #064b80;
+    margin-bottom: 10px;
+}
+
+.deskripsi {
+    color: #777;
+    margin-bottom: 25px;
+}
+
+.riwayat-card {
+    background: white;
+    border-radius: 10px;
+    padding: 22px;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+}
+
+.riwayat-header {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #eee;
+}
+
+.riwayat-header h3 {
+    color: #064b80;
+}
+
+.status {
+    color: #d18b00;
+    background: #fff4d6;
+    padding: 6px 12px;
+    border-radius: 20px;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.info-pesanan {
+    margin-top: 15px;
+    line-height: 1.9;
+}
+
+.produk-riwayat {
+    border-top: 1px solid #eee;
+    margin-top: 15px;
+    padding-top: 15px;
+}
+
+.produk-riwayat p {
+    margin-bottom: 9px;
+}
+
+.total-riwayat {
+    text-align: right;
+    color: #064b80;
+    font-size: 18px;
+    font-weight: bold;
+    margin-top: 15px;
+}
+
+.kosong {
+    background: white;
+    padding: 35px 20px;
+    text-align: center;
+    border-radius: 10px;
+    color: #777;
+}
+
+@media (max-width: 600px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .riwayat-card {
+        padding: 16px;
+    }
+}

@@ -1,0 +1,199 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Basreng - SnackMarket</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container navbar">
+
+            <div class="logo">
+                SnackMarket
+            </div>
+
+            <nav>
+                <a href="../index.html">Beranda</a>
+                <a href="../index.html#kategori">Kategori</a>
+                <a href="../basreng.html">Basreng</a>
+                <a href="../index.html#tentang">Tentang Kami</a>
+            </nav>
+
+       <div class="nav-button">
+
+             <a href="keranjang.html" class="btn-login">
+                Keranjang (<span id="jumlahKeranjang">0</span>)
+            </a>
+            <a href="login.html" class="btn-login">Masuk</a>
+            <a href="daftar.html" class="btn-register">Daftar</a> 
+            
+            <a href="../Produk/riwayat.html" class="btn-riwayat">
+                     Riwayat Pesanan</a>
+
+        </div>
+    </header>
+
+
+
+    <!-- DAFTAR PRODUK -->
+    <section class="produk container">
+
+        <h2>Basreng</h2>
+        <p>Pilih varian basreng favorit kamu.</p>
+
+        <!-- PENCARIAN DAN FILTER -->
+        <div class="search-box">
+
+            <input
+                type="text"
+                id="searchInput"
+                placeholder="Cari produk basreng..."
+                oninput="cariProduk()"
+            >
+
+            <select id="filterKategori">
+                <option value="semua">Semua Kategori</option>
+                <option value="basreng">Basreng</option>
+            </select>
+
+            <select id="urutHarga">
+                <option value="default">Urutkan Harga</option>
+                <option value="termurah">Harga Termurah</option>
+                <option value="termahal">Harga Termahal</option>
+            </select>
+
+        </div>
+
+
+        <!-- DAFTAR PRODUK -->
+        <div class="produk-list" id="produkList">
+
+            <!-- PRODUK 1 -->
+            <div class="produk-card"
+                 data-id="B001"
+                 data-nama="basreng balado"
+                 data-kategori="basreng"
+                 data-harga="10000">
+
+                <div class="produk-image">
+                    <img src="../image/bb.png" alt="Basreng Balado">
+                </div>
+
+                <h3>Basreng Balado</h3>
+                <p>Rp10.000</p>
+
+                <button class="tambah-keranjang"
+                        data-id="B001"
+                        data-nama="Basreng Balado"
+                        data-harga="10000"
+                        data-gambar="../image/bb.png">
+                    + Keranjang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 2 -->
+            <div class="produk-card"
+                 data-id="B002"
+                 data-nama="basreng keju"
+                 data-kategori="basreng"
+                 data-harga="12000">
+
+                <div class="produk-image">
+                    <img src="../image/basreng2.jpeg" alt="Basreng Keju">
+                </div>
+
+                <h3>Basreng Keju</h3>
+                <p>Rp12.000</p>
+
+                <button class="tambah-keranjang"
+                        data-id="B002"
+                        data-nama="Basreng Keju"
+                        data-harga="12000"
+                        data-gambar="../image/basreng2.jpeg">
+                    + Keranjang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 3 -->
+            <div class="produk-card"
+                 data-id="B003"
+                 data-nama="basreng pedas daun jeruk"
+                 data-kategori="basreng"
+                 data-harga="12000">
+
+                <div class="produk-image">
+                    <img src="../image/basreng3.jpeg" alt="Basreng Pedas Daun Jeruk">
+                </div>
+
+                <h3>Basreng Pedas Daun Jeruk</h3>
+                <p>Rp12.000</p>
+
+                <button class="tambah-keranjang"
+                        data-id="B003"
+                        data-nama="Basreng Pedas Daun Jeruk"
+                        data-harga="12000"
+                        data-gambar="../image/pbasreng3.jpeg">
+                    + Keranjang
+                </button>
+
+            </div>
+
+
+            <!-- PRODUK 4 -->
+            <div class="produk-card"
+                 data-id="B004"
+                 data-nama="basreng original"
+                 data-kategori="basreng"
+                 data-harga="8000">
+
+                <div class="produk-image">
+                    <img src="../image/bog.png" alt="Basreng Original">
+                </div>
+
+                <h3>Basreng Original</h3>
+                <p>Rp8.000</p>
+
+                <button class="tambah-keranjang"
+                        data-id="B004"
+                        data-nama="Basreng Original"
+                        data-harga="8000"
+                        data-gambar="../image/bog.png">
+                    + Keranjang
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- PESAN JIKA PRODUK TIDAK DITEMUKAN -->
+        <p id="pesanKosong" style="display: none;">
+            Produk tidak ditemukan.
+        </p>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <p>&copy; 2026 SnackMarket. Semua Hak Dilindungi.</p>
+    </footer>
+
+
+    <!-- JAVASCRIPT -->
+    <script src="../JavaScript/index.js"></script>
+
+</body>
+</html>

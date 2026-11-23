@@ -1,0 +1,257 @@
+
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Semua Produk - SnackMarket</title>
+    <link rel="stylesheet" href="../CSS/index.css">
+</head>
+<body>
+
+<header class="header">
+    <div class="container navbar">
+       <div class="logo">
+    <span class="logo-snack">Snack</span><span class="logo-market">Market</span>
+        </div>
+
+        <nav>
+            <a href="../index.html">Beranda</a>
+            <a href="../index.html#kategori">Kategori</a>
+            <a href="semua-produk.html">Semua Produk</a>
+            <a href="../index.html#tentang">Tentang Kami</a>
+        </nav>
+
+        <div class="nav-button">
+            <a href="keranjang.html" class="btn-login">
+                Keranjang (<span id="jumlahKeranjang">0</span>)
+            </a>
+            <a href="login.html" class="btn-login">Masuk</a>
+            <a href="daftar.html" class="btn-register">Daftar</a> 
+            
+            <a href="Produk/riwayat.html" class="btn-riwayat">
+                     Riwayat Pesanan</a>
+        </div>
+    </div>
+</header>
+
+<section class="produk container">
+
+    <h2>Semua Produk</h2>
+    <p>Temukan berbagai pilihan snack favorit kamu.</p>
+
+    <div class="search-box">
+        <input type="text" id="cariSemuaProduk"
+               placeholder="Cari nama produk...">
+
+        <select id="filterSemuaKategori">
+            <option value="semua">Semua Kategori</option>
+            <option value="keripik-pisang">Keripik Pisang</option>
+            <option value="keripik-singkong">Keripik Singkong</option>
+            <option value="makaroni">Makaroni</option>
+            <option value="basreng">Basreng</option>
+            <option value="cookies">Cookies</option>
+            <option value="cokelat-wafer">Cokelat & Wafer</option>
+        </select>
+
+        <select id="urutSemuaHarga">
+            <option value="default">Urutkan Harga</option>
+            <option value="termurah">Harga Termurah</option>
+            <option value="termahal">Harga Termahal</option>
+        </select>
+    </div>
+
+    <div class="produk-list" id="daftarSemuaProduk">
+
+        <!-- KERIPIK PISANG -->
+        <div class="produk-card" data-id="P001" data-nama="keripik pisang original" data-kategori="keripik-pisang" data-harga="7000">
+            <div class="produk-image"><img src="../image/original.png" alt="Keripik Pisang Original"></div>
+            <h3>Keripik Pisang Original</h3>
+            <p>Rp7.000</p>
+            <button class="tambah-keranjang" data-id="P001" data-nama="Keripik Pisang Original" data-harga="7000" data-gambar="../image/original.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="P002" data-nama="keripik pisang cokelat" data-kategori="keripik-pisang" data-harga="10000">
+            <div class="produk-image"><img src="../image/coklat.png" alt="Keripik Pisang Cokelat"></div>
+            <h3>Keripik Pisang Cokelat</h3>
+            <p>Rp10.000</p>
+            <button class="tambah-keranjang" data-id="P002" data-nama="Keripik Pisang Cokelat" data-harga="10000" data-gambar="../image/coklat.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="P003" data-nama="keripik pisang balado" data-kategori="keripik-pisang" data-harga="10000">
+            <div class="produk-image"><img src="../image/balado.png" alt="Keripik Pisang Balado"></div>
+            <h3>Keripik Pisang Balado</h3>
+            <p>Rp10.000</p>
+            <button class="tambah-keranjang" data-id="P003" data-nama="Keripik Pisang Balado" data-harga="10000" data-gambar="../image/balado.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="P004" data-nama="keripik pisang caramel" data-kategori="keripik-pisang" data-harga="10000">
+            <div class="produk-image"><img src="../image/caramel.png" alt="Keripik Pisang Caramel"></div>
+            <h3>Keripik Pisang Caramel</h3>
+            <p>Rp10.000</p>
+            <button class="tambah-keranjang" data-id="P004" data-nama="Keripik Pisang Caramel" data-harga="10000" data-gambar="../image/caramel.png">+ Keranjang</button>
+        </div>
+
+        <!-- KERIPIK SINGKONG -->
+        <div class="produk-card" data-id="S001" data-nama="keripik singkong original" data-kategori="keripik-singkong" data-harga="8000">
+            <div class="produk-image"><img src="../image/original2.png" alt="Keripik Singkong Original"></div>
+            <h3>Keripik Singkong Original</h3>
+            <p>Rp8.000</p>
+            <button class="tambah-keranjang" data-id="S001" data-nama="Keripik Singkong Original" data-harga="8000" data-gambar="../image/original2.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="S002" data-nama="keripik singkong barbeque" data-kategori="keripik-singkong" data-harga="10000">
+            <div class="produk-image"><img src="../image/barbeque2.png" alt="Keripik Singkong Barbeque"></div>
+            <h3>Keripik Singkong Barbeque</h3>
+            <p>Rp10.000</p>
+            <button class="tambah-keranjang" data-id="S002" data-nama="Keripik Singkong Barbeque" data-harga="10000" data-gambar="../image/barbeque2.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="S003" data-nama="keripik singkong pedas" data-kategori="keripik-singkong" data-harga="10000">
+            <div class="produk-image"><img src="../image/pedas2.png" alt="Keripik Singkong Pedas"></div>
+            <h3>Keripik Singkong Pedas</h3>
+            <p>Rp10.000</p>
+            <button class="tambah-keranjang" data-id="S003" data-nama="Keripik Singkong Pedas" data-harga="10000" data-gambar="../image/pedas2.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="S004" data-nama="keripik singkong keju" data-kategori="keripik-singkong" data-harga="12000">
+            <div class="produk-image"><img src="../image/keju.png" alt="Keripik Singkong Keju"></div>
+            <h3>Keripik Singkong Keju</h3>
+            <p>Rp12.000</p>
+            <button class="tambah-keranjang" data-id="S004" data-nama="Keripik Singkong Keju" data-harga="12000" data-gambar="../image/keju.png">+ Keranjang</button>
+        </div>
+
+        <!-- MAKARONI -->
+        <div class="produk-card" data-id="M001" data-nama="makaroni barbeque" data-kategori="makaroni" data-harga="10000">
+            <div class="produk-image"><img src="../image/bq.png" alt="Makaroni Barbeque"></div>
+            <h3>Makaroni Barbeque</h3>
+            <p>Rp10.000</p>
+            <button class="tambah-keranjang" data-id="M001" data-nama="Makaroni Barbeque" data-harga="10000" data-gambar="../image/bq.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="M002" data-nama="makaroni original" data-kategori="makaroni" data-harga="8000">
+            <div class="produk-image"><img src="../image/ori.jpeg" alt="Makaroni Original"></div>
+            <h3>Makaroni Original</h3>
+            <p>Rp8.000</p>
+            <button class="tambah-keranjang" data-id="M002" data-nama="Makaroni Original" data-harga="8000" data-gambar="../image/ori.jpeg">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="M003" data-nama="makaroni keju" data-kategori="makaroni" data-harga="12000">
+            <div class="produk-image"><img src="../image/kj.jpeg" alt="Makaroni Keju"></div>
+            <h3>Makaroni Keju</h3>
+            <p>Rp12.000</p>
+            <button class="tambah-keranjang" data-id="M003" data-nama="Makaroni Keju" data-harga="12000" data-gambar="../image/kj.jpeg">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="M004" data-nama="makaroni pedas" data-kategori="makaroni" data-harga="10000">
+            <div class="produk-image"><img src="../image/mk.png" alt="Makaroni Pedas"></div>
+            <h3>Makaroni Pedas</h3>
+            <p>Rp10.000</p>
+            <button class="tambah-keranjang" data-id="M004" data-nama="Makaroni Pedas" data-harga="10000" data-gambar="../image/mk.png">+ Keranjang</button>
+        </div>
+
+        <!-- BASRENG -->
+        <div class="produk-card" data-id="B001" data-nama="basreng balado" data-kategori="basreng" data-harga="10000">
+            <div class="produk-image"><img src="../image/bb.png" alt="Basreng Balado"></div>
+            <h3>Basreng Balado</h3>
+            <p>Rp10.000</p>
+            <button class="tambah-keranjang" data-id="B001" data-nama="Basreng Balado" data-harga="10000" data-gambar="../image/bb.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="B002" data-nama="basreng keju" data-kategori="basreng" data-harga="12000">
+            <div class="produk-image"><img src="../image/basreng2.jpeg" alt="Basreng Keju"></div>
+            <h3>Basreng Keju</h3>
+            <p>Rp12.000</p>
+            <button class="tambah-keranjang" data-id="B002" data-nama="Basreng Keju" data-harga="12000" data-gambar="../image/basreng2.jpeg">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="B003" data-nama="basreng pedas daun jeruk" data-kategori="basreng" data-harga="12000">
+            <div class="produk-image"><img src="../image/basreng3.jpeg" alt="Basreng Pedas Daun Jeruk"></div>
+            <h3>Basreng Pedas Daun Jeruk</h3>
+            <p>Rp12.000</p>
+            <button class="tambah-keranjang" data-id="B003" data-nama="Basreng Pedas Daun Jeruk" data-harga="12000" data-gambar="../image/basreng3.jpeg">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="B004" data-nama="basreng original" data-kategori="basreng" data-harga="8000">
+            <div class="produk-image"><img src="../image/bog.png" alt="Basreng Original"></div>
+            <h3>Basreng Original</h3>
+            <p>Rp8.000</p>
+            <button class="tambah-keranjang" data-id="B004" data-nama="Basreng Original" data-harga="8000" data-gambar="../image/bog.png">+ Keranjang</button>
+        </div>
+
+        <!-- COOKIES -->
+        <div class="produk-card" data-id="C001" data-nama="cookies coklat chip" data-kategori="cookies" data-harga="15000">
+            <div class="produk-image"><img src="../image/cc.png" alt="Cookies Coklat Chip"></div>
+            <h3>Cookies Coklat Chip</h3>
+            <p>Rp15.000</p>
+            <button class="tambah-keranjang" data-id="C001" data-nama="Cookies Coklat Chip" data-harga="15000" data-gambar="../image/cc.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="C002" data-nama="cookies butter" data-kategori="cookies" data-harga="12000">
+            <div class="produk-image"><img src="../image/2.jpeg" alt="Cookies Butter"></div>
+            <h3>Cookies Butter</h3>
+            <p>Rp12.000</p>
+            <button class="tambah-keranjang" data-id="C002" data-nama="Cookies Butter" data-harga="12000" data-gambar="../image/2.jpeg">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="C003" data-nama="cookies kacang" data-kategori="cookies" data-harga="12000">
+            <div class="produk-image"><img src="../image/ck.png" alt="Cookies Kacang"></div>
+            <h3>Cookies Kacang</h3>
+            <p>Rp12.000</p>
+            <button class="tambah-keranjang" data-id="C003" data-nama="Cookies Kacang" data-harga="12000" data-gambar="../image/ck.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="C004" data-nama="cookies keju" data-kategori="cookies" data-harga="15000">
+            <div class="produk-image"><img src="../image/3.jpeg" alt="Cookies Keju"></div>
+            <h3>Cookies Keju</h3>
+            <p>Rp15.000</p>
+            <button class="tambah-keranjang" data-id="C004" data-nama="Cookies Keju" data-harga="15000" data-gambar="../image/3.jpeg">+ Keranjang</button>
+        </div>
+
+        <!-- COKELAT DAN WAFER -->
+        <div class="produk-card" data-id="CW001" data-nama="wafer stroberi" data-kategori="cokelat-wafer" data-harga="8000">
+            <div class="produk-image"><img src="../image/ws.png" alt="Wafer Stroberi"></div>
+            <h3>Wafer Stroberi</h3>
+            <p>Rp8.000</p>
+            <button class="tambah-keranjang" data-id="CW001" data-nama="Wafer Stroberi" data-harga="8000" data-gambar="../image/ws.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="CW002" data-nama="wafer cokelat" data-kategori="cokelat-wafer" data-harga="8000">
+            <div class="produk-image"><img src="../image/t.png" alt="Wafer Cokelat"></div>
+            <h3>Wafer Cokelat</h3>
+            <p>Rp8.000</p>
+            <button class="tambah-keranjang" data-id="CW002" data-nama="Wafer Cokelat" data-harga="8000" data-gambar="../image/t.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="CW003" data-nama="cokelat susu" data-kategori="cokelat-wafer" data-harga="12000">
+            <div class="produk-image"><img src="../image/sc.png" alt="Cokelat Susu"></div>
+            <h3>Cokelat Susu</h3>
+            <p>Rp12.000</p>
+            <button class="tambah-keranjang" data-id="CW003" data-nama="Cokelat Susu" data-harga="12000" data-gambar="../image/sc.png">+ Keranjang</button>
+        </div>
+
+        <div class="produk-card" data-id="CW004" data-nama="cokelat dark" data-kategori="cokelat-wafer" data-harga="15000">
+            <div class="produk-image"><img src="../image/cv.png" alt="Cokelat Dark"></div>
+            <h3>Cokelat Dark</h3>
+            <p>Rp15.000</p>
+            <button class="tambah-keranjang" data-id="CW004" data-nama="Cokelat Dark" data-harga="15000" data-gambar="../image/cv.png">+ Keranjang</button>
+        </div>
+
+    </div>
+
+    <p id="pesanSemuaKosong" style="display:none;">
+        Produk tidak ditemukan.
+    </p>
+
+</section>
+
+<footer class="footer">
+    <p>&copy; 2026 SnackMarket. Semua Hak Dilindungi.</p>
+</footer>
+
+<script src="../JavaScript/index.js"></script>
+
+
+
+</body>
+</html>
